@@ -1,5 +1,5 @@
 # Project Title
-Your project's title
+Lucky's Electronics
 
 ## Student Information
 **Student number:** ST10513478 <br>
