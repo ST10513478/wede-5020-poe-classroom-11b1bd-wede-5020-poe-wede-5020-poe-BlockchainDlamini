@@ -1,0 +1,20 @@
+header{
+    background-color: aqua;
+}
+
+nav{
+    color: white;
+    padding: 15px;
+}
+nav a{
+    color: white;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+p{
+    color: black;
+}
