@@ -1,4 +1,4 @@
-body{
+nav{
     background-color: aqua;
 }
 
@@ -8,6 +8,18 @@ nav{
 }
 nav a{
     color: white;
+}
+
+header{
+    height: 150px;
+    position: relative;
+}
+
+header img{
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 #wrapper {
@@ -22,4 +34,11 @@ main {
 
 p{
     color: black;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.7em;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
