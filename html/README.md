@@ -20,8 +20,9 @@ The website title must be the business’s name in full to make it easy to find 
 Week 1: Submission of research proposals.
 Week 2: Peer to peer engagement, review and consultation with lecturer.
 Week 3: Final proposal submission.
-Week 4 - 5: Making changes based on lecturer feedback before continuation.
-Week 6 – 7: Style website accordingly.
+Week 4: Making changes based on lecturer feedback before continuation.
+Week 5: Adding css and submission.
+Week 6 – 7: Applying javascript for website functionality.
 Week 8: Lecturer  and peers consultation followed by submission.
 
 
