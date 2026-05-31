@@ -27,7 +27,7 @@ Week 8: Lecturer  and peers consultation followed by submission.
 
 ## Sitemap
 
-(![My sitemap](img/Sitemap_ST10513478.png)
+(![My sitemap](../img/Sitemap_ST10513478.png)
 ## References
 
 Istore, 2026. Available at:< iStore South Africa | South Africa's Widest Apple Range Online iStore South Africa | Buy Apple Products Online | Free Delivery>[Accessed 14 April 2026].
