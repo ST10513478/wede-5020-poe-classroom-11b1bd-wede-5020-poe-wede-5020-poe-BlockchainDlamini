@@ -27,6 +27,12 @@ header img{
     margin-right: auto;
 }
 
+nav{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 main {
     background-color: white;
     padding: 20px;
