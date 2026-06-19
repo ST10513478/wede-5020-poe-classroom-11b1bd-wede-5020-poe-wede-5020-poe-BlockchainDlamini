@@ -35,7 +35,9 @@ function renderCart() {
         card.className = 'products-card';
         card.innerHTML = `
         <h3>${item.name}</h3>
-        <p>R${item.price}</p>`
+        <p>R${item.price}</p>
+        <button onclick="removeFromCart(${index})">Remove</button>`;
+        containers.appendChild(card);
         total += parseFloat(item.price);
     });
     totalDisplay.textContent = total;
