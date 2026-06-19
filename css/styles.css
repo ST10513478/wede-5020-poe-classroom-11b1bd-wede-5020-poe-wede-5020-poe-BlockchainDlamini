@@ -1,3 +1,5 @@
+
+/*Header & Footer*/
 #wrapper{
     width: 960px;
     background-color: aqua;
@@ -54,4 +56,16 @@ footer{
     height: 1rem;
     vertical-align: middle;
     margin: 0.5rem;
+}
+
+/*cart & products -->*/
+#cart {
+border: 2px solid #6a0dad;
+padding: 15px;
+width: 300px;
+}
+.products {
+margin: 10px;
+padding: 10px;
+border: 1px solid #ddd;
 }
