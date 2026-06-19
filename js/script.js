@@ -1,4 +1,4 @@
-function addToCart(name, price){
+function addToCart(name, price) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.push({name, price});
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -15,3 +15,26 @@ document.querySelectorAll('.addToCart').forEach(button =>{
     })
 })
 
+document.addEventListener('DOMContentLoaded', () =>{
+    const cartList= document.getElementById('cartList');
+    if (cartList){
+        renderCart();
+    }
+})
+
+function renderCart() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const list = document.getElementById('cartList');
+    const totalDisplay = document.getElementById(totalPrice);
+    let total = 0
+
+    list.innerHTML = '';
+
+    cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - R${item.price}`;
+        list.appendChild(li);
+    })
+    
+}
+addToCart(name, price
