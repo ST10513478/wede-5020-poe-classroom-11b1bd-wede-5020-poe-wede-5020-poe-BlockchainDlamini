@@ -34,7 +34,8 @@ function renderCart() {
         const li = document.createElement('li');
         li.textContent = `${item.name} - R${item.price}`;
         list.appendChild(li);
-    })
+        total += parseFloat(item.price);
+    });
+    totalDisplay.textContent = total;
     
 }
-addToCart(name, price
