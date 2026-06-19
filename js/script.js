@@ -50,3 +50,10 @@ function removeFromCart(index){
     localStorage.setItem('cart', JSON.stringify(cart))
     renderCart();
 }
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+setInterval(() => {plusSlides(1);}
+    
+}, interval);
