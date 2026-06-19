@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 function renderCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const containers = document.getElementById('cartList');
+    const container = document.getElementById('cartList');
     const totalDisplay = document.getElementById(totalPrice);
     let total = 0
 
-    list.innerHTML = '';
+    container.innerHTML = '';
 
     cart.forEach(item => {
         const card = document.createElement('div');
@@ -37,7 +37,7 @@ function renderCart() {
         <h3>${item.name}</h3>
         <p>R${item.price}</p>
         <button onclick="removeFromCart(${index})">Remove</button>`;
-        containers.appendChild(card);
+        container.appendChild(card);
         total += parseFloat(item.price);
     });
     totalDisplay.textContent = total;
@@ -48,4 +48,6 @@ function removeFromCart(index){
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.splice(index, 1);
     localStorage.setItem('cart', JSON.stringify(cart))
+    renderCart();
 }
+
