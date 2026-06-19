@@ -5,7 +5,7 @@ function addToCart(name, price){
     alert(name + "added to cart!");
 }
 
-document.querySelectorAll('.add to cart').forEach(button =>{
+document.querySelectorAll('.addToCart').forEach(button =>{
     button.addEventListener('click', (e) => {
         const card= e.target.closet('.products-card');
         const name= card.getAttribute('data-name');
@@ -14,3 +14,4 @@ document.querySelectorAll('.add to cart').forEach(button =>{
         addToCart(name, price)
     })
 })
+
