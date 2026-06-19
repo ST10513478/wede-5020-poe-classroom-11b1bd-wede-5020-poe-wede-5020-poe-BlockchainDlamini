@@ -87,3 +87,9 @@ footer{
     font-weight: bold;
     cursor: pointer;
 }
+
+/*navigation bar */
+.search-container{
+    padding: 20px;
+    text-align: center;
+}
