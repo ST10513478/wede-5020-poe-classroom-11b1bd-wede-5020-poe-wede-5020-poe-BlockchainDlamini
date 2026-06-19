@@ -24,18 +24,21 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 function renderCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const list = document.getElementById('cartList');
+    const containers = document.getElementById('cartList');
     const totalDisplay = document.getElementById(totalPrice);
     let total = 0
 
     list.innerHTML = '';
 
     cart.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = `${item.name} - R${item.price}`;
-        list.appendChild(li);
+        const card = document.createElement('div');
+        card.className = 'products-card';
+        card.innerHTML = `
+        <h3>${item.name}</h3>
+        <p>R${item.price}</p>`
         total += parseFloat(item.price);
     });
     totalDisplay.textContent = total;
     
 }
+
