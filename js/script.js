@@ -7,7 +7,7 @@ function addToCart(name, price) {
 
 document.querySelectorAll('.add-to-cart').forEach(button =>{
     button.addEventListener('click', (e) => {
-        const card= e.target.closet('.products-card');
+        const card= e.target.closest('.products-card');
         const name= card.getAttribute('data-name');
         const price= card.getAttribute('data-price');
 
